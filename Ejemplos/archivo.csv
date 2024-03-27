@@ -1,0 +1,165 @@
+﻿Name,Type,Data Type,Address
+Start Button,Input,Bool,Input 0
+Stop Button,Input,Bool,Input 1
+Reset Button,Input,Bool,Input 2
+Blue Product base Sensor,Input,Bool,Input 3
+Green Product base Sensor,Input,Bool,Input 4
+Metal Product base Sensor,Input,Bool,Input 5
+Blue Product base Sensor2,Input,Bool,Input 6
+Green Product base Sensor 2,Input,Bool,Input 7
+Metal Product base Sensor2,Input,Bool,Input 8
+Blue Product Lid Sensor,Input,Bool,Input 9
+Green Product Lid Sensor,Input,Bool,Input 10
+Metal Product Lid Sensor,Input,Bool,Input 11
+Blue Item Detected Sensor,Input,Bool,Input 12
+Green Item Detected Sensor,Input,Bool,Input 13
+Metal Item Detected Sensor,Input,Bool,Input 14
+Blue Item Detected Sensor 2,Input,Bool,Input 15
+Green Item Detected Sensor 2,Input,Bool,Input 16
+Metal Item Detected Sensor 2,Input,Bool,Input 17
+Blue Stackable Box Sensor,Input,Bool,Input 18
+Green Stackable Box Sensor,Input,Bool,Input 19
+Metal Stackable Box Sensor,Input,Bool,Input 20
+Blue Rotate sensor,Input,Bool,Input 21
+Green Rotate sensor,Input,Bool,Input 22
+Metal Rotate sensor,Input,Bool,Input 23
+Stacker Crane 2 Moving-X,Input,Bool,Input 24
+Stacker Crane 2 Moving-Z,Input,Bool,Input 25
+Stacker Crane 3 Moving-X,Input,Bool,Input 26
+Stacker Crane 3 Moving-Z,Input,Bool,Input 27
+Stacker Crane 4 Moving-X,Input,Bool,Input 28
+Stacker Crane 4 Moving-Z,Input,Bool,Input 29
+Turntable GS 0 G Sensor,Input,Bool,Input 30
+Turntable GS 90 G Sensor,Input,Bool,Input 31
+Turntable GS Back Sensor,Input,Bool,Input 32
+Turntable GS Front Sensor,Input,Bool,Input 33
+Turntable MS 0 G Sensor,Input,Bool,Input 34
+Turntable MS 90 G Sensor,Input,Bool,Input 35
+Turntable MS Back Sensor,Input,Bool,Input 36
+Turntable MS Front Sensor,Input,Bool,Input 37
+Sensor Turntable Blue Station1,Input,Bool,Input 38
+Sensor Turntable Green Station1,Input,Bool,Input 39
+Sensor Turntable Metal Station1,Input,Bool,Input 40
+Sensor Turntable Green Station2,Input,Bool,Input 41
+Sensor Turntable Metal Station2,Input,Bool,Input 42
+Stacker Crane 2 Middle Limit,Input,Bool,Input 43
+Stacker Crane 3 Middle Limit,Input,Bool,Input 44
+Stacker Crane 4 Middle Limit,Input,Bool,Input 45
+Stacker Crane 2 Right Limit,Input,Bool,Input 46
+Stacker Crane 3 Right Limit,Input,Bool,Input 47
+Stacker Crane 4 Right Limit,Input,Bool,Input 48
+Stacker Crane 2 Left Limit,Input,Bool,Input 49
+Stacker Crane 3 Left Limit,Input,Bool,Input 50
+Stacker Crane 4 Left Limit,Input,Bool,Input 51
+Start Button 1 (Light),Output,Bool,Coil 0
+Stop Button 1 (Light),Output,Bool,Coil 1
+Reset Button 1 (Light),Output,Bool,Coil 2
+Blue Sorter Belt,Output,Bool,Coil 3
+Green Sorter Belt,Output,Bool,Coil 4
+Metal Sorter Belt,Output,Bool,Coil 5
+Blue Sorter Turn,Output,Bool,Coil 6
+Green Sorter Turn,Output,Bool,Coil 7
+Metal Sorter Turn,Output,Bool,Coil 8
+Belt Conveyor 1,Output,Bool,Coil 9
+Belt Conveyor 2,Output,Bool,Coil 10
+Blue Belt Conveyor 5,Output,Bool,Coil 11
+Blue Belt Conveyor 6,Output,Bool,Coil 12
+Blue Belt Conveyor 7,Output,Bool,Coil 13
+Blue Belt Conveyor 8,Output,Bool,Coil 14
+Green Belt Conveyor 5,Output,Bool,Coil 15
+Green Belt Conveyor 6,Output,Bool,Coil 16
+Green Belt Conveyor 7,Output,Bool,Coil 17
+Green Belt Conveyor 8,Output,Bool,Coil 18
+Metal Belt Conveyor 5,Output,Bool,Coil 19
+Metal Belt Conveyor 6,Output,Bool,Coil 20
+Metal Belt Conveyor 7,Output,Bool,Coil 21
+Metal Belt Conveyor 8,Output,Bool,Coil 22
+Blue Positioner 1 (Clamp),Output,Bool,Coil 23
+Blue Positioner 1 (Raise),Output,Bool,Coil 24
+Blue Positioner 2 (Clamp),Output,Bool,Coil 25
+Blue Positioner 1a (Clamp),Output,Bool,Coil 26
+Green Positioner 1  (Clamp),Output,Bool,Coil 27
+Green Positioner 1 (Raise),Output,Bool,Coil 28
+Green Positioner 2  (Clamp),Output,Bool,Coil 29
+Green Positioner 1a  (Clamp),Output,Bool,Coil 30
+Metal Positioner 1 (Clamp),Output,Bool,Coil 31
+Metal Positioner 1 (Raise),Output,Bool,Coil 32
+Metal Positioner 2 (Clamp),Output,Bool,Coil 33
+Metal Positioner 1a  (Clamp),Output,Bool,Coil 34
+Blue Pick & Place (Grab),Output,Bool,Coil 35
+Blue Pick & Place (Grab) 2,Output,Bool,Coil 36
+Green Pick & Place (Grab),Output,Bool,Coil 37
+Green Pick & Place (Grab) 2,Output,Bool,Coil 38
+Metal Pick & Place (Grab),Output,Bool,Coil 39
+Metal Pick & Place (Grab) 2,Output,Bool,Coil 40
+Blue Stackable Box Rotate,Output,Bool,Coil 41
+Green Stackable Box Rotate,Output,Bool,Coil 42
+Metal Stackable Box Rotate,Output,Bool,Coil 43
+Blue Pallet Rotate,Output,Bool,Coil 44
+Green Pallet Rotate,Output,Bool,Coil 45
+Metal Pallet Rotate,Output,Bool,Coil 46
+Stacker Crane 2 Lift,Output,Bool,Coil 47
+Stacker Crane 3 Lift,Output,Bool,Coil 48
+Stacker Crane 4 Lift,Output,Bool,Coil 49
+Stacker Crane 2 (Left),Output,Bool,Coil 50
+Stacker Crane 3 (Left),Output,Bool,Coil 51
+Stacker Crane 4 (Left),Output,Bool,Coil 52
+Stacker Crane 2 (Right),Output,Bool,Coil 53
+Stacker Crane 3 (Right),Output,Bool,Coil 54
+Stacker Crane 4 (Right),Output,Bool,Coil 55
+Turntable GS Roll F,Output,Bool,Coil 56
+Turntable GS Turn,Output,Bool,Coil 57
+Turntable MS Roll F,Output,Bool,Coil 58
+Turntable MS Turn,Output,Bool,Coil 59
+Loading Conveyor 0,Output,Bool,Coil 60
+Loading Conveyor 1,Output,Bool,Coil 61
+Loading Conveyor 2,Output,Bool,Coil 62
+Loading Conveyor 3,Output,Bool,Coil 63
+Loading Conveyor 4,Output,Bool,Coil 64
+Blue Belt Conveyor 1,Output,Bool,Coil 65
+Blue Belt Conveyor 2,Output,Bool,Coil 66
+Blue Belt Conveyor 3,Output,Bool,Coil 67
+Blue Belt Conveyor 4,Output,Bool,Coil 68
+Green Belt Conveyor 1,Output,Bool,Coil 69
+Green Belt Conveyor 2,Output,Bool,Coil 70
+Green Belt Conveyor 3,Output,Bool,Coil 71
+Green Belt Conveyor 4,Output,Bool,Coil 72
+Metal Belt Conveyor 1,Output,Bool,Coil 73
+Curved Roller Conveyor B,Output,Bool,Coil 74
+Curved Roller Conveyor F,Output,Bool,Coil 75
+Roller Conveyor B2M,Output,Bool,Coil 76
+Roller Conveyor M2G,Output,Bool,Coil 77
+Roller Conveyor G2F,Output,Bool,Coil 78
+Blue Sensor,Input,Int,Input Reg 0
+Green Sensor,Input,Int,Input Reg 1
+Metal Sensor,Input,Int,Input Reg 2
+Blue X Position Sensor,Input,Real,Input Reg 3
+Blue Z Position Sensor,Input,Real,Input Reg 4
+Blue X Position Sensor 2,Input,Real,Input Reg 5
+Blue Z Position Sensor 2,Input,Real,Input Reg 6
+Green X Position Sensor,Input,Real,Input Reg 7
+Green Z Position Sensor,Input,Real,Input Reg 8
+Green X Position Sensor 2,Input,Real,Input Reg 9
+Green Z Position Sensor 2,Input,Real,Input Reg 10
+Metal X Position Sensor,Input,Real,Input Reg 11
+Metal Z Position Sensor,Input,Real,Input Reg 12
+Metal X Position Sensor 2,Input,Real,Input Reg 13
+Metal Z Position Sensor 2,Input,Real,Input Reg 14
+Blue Sensor 2,Input,Int,Input Reg 15
+Green Sensor 2,Input,Int,Input Reg 16
+Metal Sensor2,Input,Int,Input Reg 17
+Blue Pick & Place X Set Point,Output,Real,Holding Reg 0
+Blue Pick & Place Z Set Point,Output,Real,Holding Reg 1
+Blue Pick & Place X Set Point 2,Output,Real,Holding Reg 2
+Blue Pick & Place Z Set Point 2,Output,Real,Holding Reg 3
+Green Pick & Place X Set Point,Output,Real,Holding Reg 4
+Green Pick & Place Z Set Point,Output,Real,Holding Reg 5
+Green Pick & Place X Set Point 2,Output,Real,Holding Reg 6
+Green Pick & Place Z Set Point 2,Output,Real,Holding Reg 7
+Metal Pick & Place X Set Point,Output,Real,Holding Reg 8
+Metal Pick & Place Z Set Point,Output,Real,Holding Reg 9
+Metal Pick & Place X Set Point 2,Output,Real,Holding Reg 10
+Metal Pick & Place Z Set Point 2,Output,Real,Holding Reg 11
+Stacker Crane 2 Target Position,Output,Int,Holding Reg 15
+Stacker Crane 3 Target Position,Output,Int,Holding Reg 16
+Stacker Crane 4 Target Position,Output,Int,Holding Reg 17
