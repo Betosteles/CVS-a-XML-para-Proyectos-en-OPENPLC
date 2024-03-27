@@ -1,0 +1,4106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Desconocido" productName="Sin nombre" productVersion="1" creationDateTime="2024-03-11T19:08:26"/>
+  <contentHeader name="Topicos" modificationDateTime="2024-03-26T02:22:43">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="10" y="10"/>
+      </fbd>
+      <ld>
+        <scaling x="10" y="10"/>
+      </ld>
+      <sfc>
+        <scaling x="10" y="10"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="RedPetri" pouType="functionBlock">
+        <interface>
+          <externalVars>
+            <variable name="E_0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_2">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_3">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_4">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_5">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_6">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_7">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+                <variable name="Start_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stop_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Reset_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_base_Sensor2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_base_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_base_Sensor2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_0_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_90_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Back_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Front_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_0_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_90_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Back_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Front_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Blue_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Start_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stop_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Reset_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Roll_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Roll_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_0">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_B">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_B2M">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_M2G">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_G2F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Green_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Metal_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Blue_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sensor_2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Green_Sensor_2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Metal_Sensor2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+          </externalVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml:p><![CDATA[If E_0 = True Then
+
+
+
+      E_0 := False;
+
+      E_1 := True;
+
+
+
+  End_If;]]></xhtml:p>
+          </ST>
+        </body>
+      </pou>
+      <pou name="Actuadores" pouType="functionBlock">
+        <interface>
+          <externalVars>
+            <variable name="E_0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_2">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_3">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_4">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_5">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_6">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_7">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+                <variable name="Start_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stop_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Reset_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_base_Sensor2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_base_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_base_Sensor2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_0_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_90_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Back_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Front_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_0_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_90_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Back_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Front_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Blue_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Start_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stop_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Reset_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Roll_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Roll_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_0">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_B">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_B2M">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_M2G">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_G2F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Green_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Metal_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Blue_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sensor_2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Green_Sensor_2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Metal_Sensor2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+          </externalVars>
+        </interface>
+        <body>
+          <LD>
+            <leftPowerRail localId="1" width="10" height="40">
+              <position x="150" y="110"/>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="20"/>
+              </connectionPointOut>
+            </leftPowerRail>
+            <contact localId="3" negated="false" width="30" height="20">
+              <position x="210" y="120"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="210" y="130"/>
+                  <position x="160" y="130"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="30" y="10"/>
+              </connectionPointOut>
+              <variable>E_0</variable>
+            </contact>
+            <coil localId="4" negated="false" width="21" height="20">
+              <position x="330" y="120"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="3">
+                  <position x="330" y="130"/>
+                  <position x="240" y="130"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>GreenSortherBelt</variable>
+            </coil>
+            <coil localId="2" negated="false" width="21" height="20" executionOrderId="0">
+              <position x="330" y="170"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="3">
+                  <position x="330" y="180"/>
+                  <position x="285" y="180"/>
+                  <position x="285" y="130"/>
+                  <position x="240" y="130"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>GreenSortherTurn</variable>
+            </coil>
+          </LD>
+        </body>
+      </pou>
+      <pou name="OB1" pouType="program">
+        <interface>
+          <externalVars>
+            <variable name="E_0">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_1">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_2">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_3">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_4">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_5">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_6">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+            <variable name="E_7">
+              <type>
+                <BOOL/>
+              </type>
+            </variable>
+                <variable name="Start_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stop_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Reset_Button">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_base_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_base_Sensor2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_base_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_base_Sensor2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Product_Lid_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Stackable_Box_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Rotate_sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_X">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_Z">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_0_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_90_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Back_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Front_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_0_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_90_G_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Back_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Front_Sensor">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Blue_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Middle_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Right_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Left_Limit">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Start_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stop_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Reset_Button_1_Light">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Sorter_Belt">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Sorter_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_5">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_6">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_7">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_8">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1_Raise">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_2_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Positioner_1a_Clamp">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Stackable_Box_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pallet_Rotate">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Lift">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Left">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Right">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Roll_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_GS_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Roll_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Turntable_MS_Turn">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_0">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Loading_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_2">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_3">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Green_Belt_Conveyor_4">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_1">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_B">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_B2M">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_M2G">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Roller_Conveyor_G2F">
+        <type>
+            <BOOL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Green_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Metal_Sensor">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Blue_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_X_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_X_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Sensor_2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Green_Sensor_2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Metal_Sensor2">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point_2">
+        <type>
+            <REAL/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_2_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_3_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+    <variable name="Stacker_Crane_4_Target_Position">
+        <type>
+            <INT/>
+        </type>
+    </variable>
+          </externalVars>
+          <localVars>
+            <variable name="RedPetri0">
+              <type>
+                <derived name="RedPetri"/>
+              </type>
+            </variable>
+            <variable name="Actuadores0">
+              <type>
+                <derived name="Actuadores"/>
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <LD>
+            <block localId="3" typeName="RedPetri" instanceName="RedPetri0" width="80" height="20">
+              <position x="120" y="80"/>
+              <inputVariables/>
+              <inOutVariables/>
+              <outputVariables/>
+            </block>
+            <block localId="4" typeName="Actuadores" instanceName="Actuadores0" width="100" height="20">
+              <position x="270" y="70"/>
+              <inputVariables/>
+              <inOutVariables/>
+              <outputVariables/>
+            </block>
+          </LD>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="task0" priority="0" interval="T#20ms">
+            <pouInstance name="instance0" typeName="OB1"/>
+          </task>
+          <globalVars>
+            <variable name="E_0">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="True"/>
+              </initialValue>
+            </variable>
+            <variable name="E_1">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="False"/>
+              </initialValue>
+            </variable>
+            <variable name="E_2">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="False"/>
+              </initialValue>
+            </variable>
+            <variable name="E_3">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="False"/>
+              </initialValue>
+            </variable>
+            <variable name="E_4">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="False"/>
+              </initialValue>
+            </variable>
+            <variable name="E_5">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="False"/>
+              </initialValue>
+            </variable>
+            <variable name="E_6">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="False"/>
+              </initialValue>
+            </variable>
+            <variable name="E_7">
+              <type>
+                <BOOL/>
+              </type>
+              <initialValue>
+                <simpleValue value="False"/>
+              </initialValue>
+            </variable>
+                <variable name="Start_Button" address="%IX100.0">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stop_Button" address="%IX100.1">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Reset_Button" address="%IX100.2">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Product_base_Sensor" address="%IX100.3">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Product_base_Sensor" address="%IX100.4">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Product_base_Sensor" address="%IX100.5">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Product_base_Sensor2" address="%IX100.6">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Product_base_Sensor_2" address="%IX100.7">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Product_base_Sensor2" address="%IX100.8">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Product_Lid_Sensor" address="%IX100.9">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Product_Lid_Sensor" address="%IX100.10">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Product_Lid_Sensor" address="%IX100.11">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor" address="%IX100.12">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor" address="%IX100.13">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor" address="%IX100.14">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Item_Detected_Sensor_2" address="%IX100.15">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Item_Detected_Sensor_2" address="%IX100.16">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Item_Detected_Sensor_2" address="%IX100.17">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Stackable_Box_Sensor" address="%IX100.18">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Stackable_Box_Sensor" address="%IX100.19">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Stackable_Box_Sensor" address="%IX100.20">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Rotate_sensor" address="%IX100.21">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Rotate_sensor" address="%IX100.22">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Rotate_sensor" address="%IX100.23">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_X" address="%IX100.24">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Moving_Z" address="%IX100.25">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_X" address="%IX100.26">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Moving_Z" address="%IX100.27">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_X" address="%IX100.28">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Moving_Z" address="%IX100.29">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_GS_0_G_Sensor" address="%IX100.30">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_GS_90_G_Sensor" address="%IX100.31">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_GS_Back_Sensor" address="%IX100.32">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_GS_Front_Sensor" address="%IX100.33">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_MS_0_G_Sensor" address="%IX100.34">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_MS_90_G_Sensor" address="%IX100.35">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_MS_Back_Sensor" address="%IX100.36">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_MS_Front_Sensor" address="%IX100.37">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Sensor_Turntable_Blue_Station1" address="%IX100.38">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station1" address="%IX100.39">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station1" address="%IX100.40">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Sensor_Turntable_Green_Station2" address="%IX100.41">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Sensor_Turntable_Metal_Station2" address="%IX100.42">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Middle_Limit" address="%IX100.43">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Middle_Limit" address="%IX100.44">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Middle_Limit" address="%IX100.45">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Right_Limit" address="%IX100.46">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Right_Limit" address="%IX100.47">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Right_Limit" address="%IX100.48">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Left_Limit" address="%IX100.49">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Left_Limit" address="%IX100.50">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Left_Limit" address="%IX100.51">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Start_Button_1_Light" address="%QX100.0">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stop_Button_1_Light" address="%QX100.1">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Reset_Button_1_Light" address="%QX100.2">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Sorter_Belt" address="%QX100.3">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Sorter_Belt" address="%QX100.4">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Sorter_Belt" address="%QX100.5">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Sorter_Turn" address="%QX100.6">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Sorter_Turn" address="%QX100.7">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Sorter_Turn" address="%QX100.8">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Belt_Conveyor_1" address="%QX100.9">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Belt_Conveyor_2" address="%QX100.10">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_5" address="%QX100.11">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_6" address="%QX100.12">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_7" address="%QX100.13">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_8" address="%QX100.14">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_5" address="%QX100.15">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_6" address="%QX100.16">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_7" address="%QX100.17">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_8" address="%QX100.18">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_5" address="%QX100.19">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_6" address="%QX100.20">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_7" address="%QX100.21">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_8" address="%QX100.22">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Positioner_1_Clamp" address="%QX100.23">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Positioner_1_Raise" address="%QX100.24">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Positioner_2_Clamp" address="%QX100.25">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Positioner_1a_Clamp" address="%QX100.26">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Positioner_1_Clamp" address="%QX100.27">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Positioner_1_Raise" address="%QX100.28">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Positioner_2_Clamp" address="%QX100.29">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Positioner_1a_Clamp" address="%QX100.30">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Positioner_1_Clamp" address="%QX100.31">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Positioner_1_Raise" address="%QX100.32">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Positioner_2_Clamp" address="%QX100.33">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Positioner_1a_Clamp" address="%QX100.34">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab" address="%QX100.35">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Grab_2" address="%QX100.36">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab" address="%QX100.37">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Pick_and_Place_Grab_2" address="%QX100.38">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab" address="%QX100.39">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Grab_2" address="%QX100.40">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Stackable_Box_Rotate" address="%QX100.41">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Stackable_Box_Rotate" address="%QX100.42">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Stackable_Box_Rotate" address="%QX100.43">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Pallet_Rotate" address="%QX100.44">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Pallet_Rotate" address="%QX100.45">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Pallet_Rotate" address="%QX100.46">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Lift" address="%QX100.47">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Lift" address="%QX100.48">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Lift" address="%QX100.49">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Left" address="%QX100.50">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Left" address="%QX100.51">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Left" address="%QX100.52">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Right" address="%QX100.53">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Right" address="%QX100.54">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Right" address="%QX100.55">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_GS_Roll_F" address="%QX100.56">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_GS_Turn" address="%QX100.57">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_MS_Roll_F" address="%QX100.58">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Turntable_MS_Turn" address="%QX100.59">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Loading_Conveyor_0" address="%QX100.60">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Loading_Conveyor_1" address="%QX100.61">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Loading_Conveyor_2" address="%QX100.62">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Loading_Conveyor_3" address="%QX100.63">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Loading_Conveyor_4" address="%QX100.64">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_1" address="%QX100.65">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_2" address="%QX100.66">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_3" address="%QX100.67">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Belt_Conveyor_4" address="%QX100.68">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_1" address="%QX100.69">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_2" address="%QX100.70">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_3" address="%QX100.71">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Belt_Conveyor_4" address="%QX100.72">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Belt_Conveyor_1" address="%QX100.73">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_B" address="%QX100.74">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Curved_Roller_Conveyor_F" address="%QX100.75">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Roller_Conveyor_B2M" address="%QX100.76">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Roller_Conveyor_M2G" address="%QX100.77">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Roller_Conveyor_G2F" address="%QX100.78">
+        <type>
+            <BOOL/>
+        </type>
+        <initialValue>
+            <simpleValue value="False"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Sensor" address="%IW100">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Sensor" address="%IW101">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Sensor" address="%IW102">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_X_Position_Sensor" address="%IW103">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor" address="%IW104">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_X_Position_Sensor_2" address="%IW105">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Z_Position_Sensor_2" address="%IW106">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_X_Position_Sensor" address="%IW107">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Z_Position_Sensor" address="%IW108">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_X_Position_Sensor_2" address="%IW109">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Z_Position_Sensor_2" address="%IW110">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_X_Position_Sensor" address="%IW111">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor" address="%IW112">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_X_Position_Sensor_2" address="%IW113">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Z_Position_Sensor_2" address="%IW114">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Sensor_2" address="%IW115">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Sensor_2" address="%IW116">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Sensor2" address="%IW117">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point" address="%QW100">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point" address="%QW101">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Pick_and_Place_X_Set_Point_2" address="%QW102">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Blue_Pick_and_Place_Z_Set_Point_2" address="%QW103">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point" address="%QW104">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point" address="%QW105">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Pick_and_Place_X_Set_Point_2" address="%QW106">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Green_Pick_and_Place_Z_Set_Point_2" address="%QW107">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point" address="%QW108">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point" address="%QW109">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Pick_and_Place_X_Set_Point_2" address="%QW110">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Metal_Pick_and_Place_Z_Set_Point_2" address="%QW111">
+        <type>
+            <REAL/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_2_Target_Position" address="%QW115">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_3_Target_Position" address="%QW116">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+    <variable name="Stacker_Crane_4_Target_Position" address="%QW117">
+        <type>
+            <INT/>
+        </type>
+        <initialValue>
+            <simpleValue value="0"/>
+        </initialValue>
+    </variable>
+          </globalVars>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>
